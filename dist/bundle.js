@@ -105,15 +105,15 @@ helloWorldButton.render();
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _hello_world_button_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var _hello_world_button_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_hello_world_button_css__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _hello_world_button_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
+/* harmony import */ var _hello_world_button_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_hello_world_button_scss__WEBPACK_IMPORTED_MODULE_0__);
 
 
 class HelloWorldButton {
   render() {
     const button = document.createElement('button');
     button.innerHTML = 'Hello World';
-    button.classList.add('hellow-world-button');
+    button.classList.add('hello-world-button');
     button.onclick = function () {
       const p = document.createElement('p');
       p.innerHTML = 'Hellow World';
@@ -438,7 +438,7 @@ module.exports = function (list, options) {
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(5);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".hello-world-button {\r\n  font-size: 20px;\r\n  padding: 7px 15px;\r\n  background: green;\r\n  color: white;\r\n  outline: none;\r\n}\r\n\r\n.hello-world-text {\r\n  color: green;\r\n  font-weight: bold;\r\n}", ""]);
+exports.push([module.i, ".hello-world-button {\n  font-size: 20px;\n  padding: 7px 15px;\n  background: green;\n  color: white;\n  outline: none; }\n\n.hello-world-text {\n  color: red;\n  font-weight: bold; }\n", ""]);
 // Exports
 module.exports = exports;
 
