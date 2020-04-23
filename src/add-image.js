@@ -1,6 +1,5 @@
 import Kiwi from './kiwi.jpg';
 
-console.log ('oiii')
 function addImage() {
   console.log('oi');
   const img = document.createElement('img');
