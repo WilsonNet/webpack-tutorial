@@ -1,5 +1,5 @@
 const path = require('path');
-
+const TerserPlugin = require('terser-webpack-plugin');
 module.exports = {
   entry: './src/index.js',
   output: {
@@ -29,10 +29,11 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: ['@babel/env'],
-            plugins: ['transform-class-properties']
+            plugins: ['transform-class-properties'],
           },
         },
       },
     ],
   },
+  plugins: [new TerserPlugin()],
 };
