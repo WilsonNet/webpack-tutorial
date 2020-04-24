@@ -1,7 +1,8 @@
 import HelloWorldButton from './components/hello-world-button';
 import Heading from './components/heading';
+import React from 'react';
 
-const heading = new Heading();
+const heading = new Heading(_.upperFirst('hello world'));
 heading.render();
 
 const helloWorldButton = new HelloWorldButton();
@@ -12,4 +13,3 @@ if (process.env.NODE_ENV === 'production') {
 } else if (process.env.NODE_ENV === 'development') {
   console.log('dev');
 }
-

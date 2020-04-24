@@ -14,6 +14,13 @@ module.exports = {
     publicPath: '',
   },
   mode: 'production',
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+      minSize: 10000,
+      automaticNameDelimiter: '_',
+    },
+  },
   module: {
     rules: [
       {
@@ -60,14 +67,14 @@ module.exports = {
       title: 'custom_filename.html',
       template: 'src/page-template.hbs',
       description: ' sasassas',
-      chunks: ['hello-world']
+      chunks: ['hello-world', 'vendors~hello-world~kiwi'],
     }),
     new HtmlWebpackPlugin({
       filename: 'kiwi.html',
       title: 'custom_filename.html',
       template: 'src/page-template.hbs',
       description: ' sasassas',
-      chunks: ['kiwi']
+      chunks: ['kiwi', 'vendors~hello-world~kiwi'],
     }),
   ],
 };
